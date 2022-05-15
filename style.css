@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    background: url(img/wallpaper2.jpg);
+    background-size: cover;
+    justify-content: center;
+    height: 100vh;
+  }
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 1300px;
+    height: 800px;
+    background: #ffe9e9;
+    border-radius: 15px;
+    display: flex;
+    box-shadow: 0 25px  45px rgba(0,0,0,0.2);
+    border: none;
+}
+
+.esquerda {
+    position: relative;
+    width: 650px;
+    min-height: 800px;
+    background: #ffffff;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+
+header {
+    padding:2.5rem 10%;
+    top:0; left: 0; right: 0;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.055);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(255, 255, 255);
+    height: 50px;
+    width: 1300px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+header .logo {
+    width: 55px;
+    height: 55px;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 50px;
+
+}
+
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+nav a:hover {
+    transition: 0.2s;
+	color: #FF93AD;
+}
+
+.apresentacao {
+    padding: 0 10%;
+    padding-top: 6.5rem;
+}
+
+.apresentacao h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    color: rgb(74, 212, 205);
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+.apresentacao h1 {
+    font-weight: 900;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.apresentacao p {
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: normal;
+}
+
+.trabalho-com {
+    padding: 0 10%;
+    padding-top: 1rem;
+}
+
+.trabalho-com h1 {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.devicon {
+    width: 40px;
+    height: 40px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.botoes {
+    padding-left: 10%;
+    padding-top: 5rem;
+}
+
+button {
+    font-family: 'Poppins', sans-serif;
+}
+
+.botao1 {
+    margin-left: 10%;
+    margin-top: 4rem; 
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 10px;
+    color: #FF93AD;
+    z-index: 1;
+    background: #ffece7;
+    position: relative;
+    font-weight: 1000;
+    font-size: 14px;
+    transition: all 250ms;
+    overflow: hidden;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+   
+.botao1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 10px;
+    background-color: #FF93AD;
+    z-index: -1;
+    transition: all 250ms
+}
+   
+.botao1:hover {
+    color: #fffdfd;
+}
+   
+.botao1:hover::before {
+    width: 100%;
+}
+
+.botao2 {
+    margin-left: 5%;
+    border: unset;
+    cursor: pointer;
+    border-radius: 10px;
+    position: relative;
+    font-weight: 900;
+    font-size: 14px;
+    text-transform: uppercase;
+    background: none;
+}
+
+.hover-underline-animation {
+    position: relative;
+    color: black;
+    padding-bottom: 13px;
+}
+   
+.hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1.5px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+   
+.botao2:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.eu {
+    position: relative;
+    height: 580px;
+    width: 580px;
+    left: 39rem;
+    bottom: 33rem;
+    box-shadow: 0 15px  35px rgba(0,0,0,0.1);
+    border-radius: 15px;
+}
+
+.index-icons1 {
+    position: relative;
+    height: 23px;
+    width: 23px;
+    bottom: 800px;
+    left: 671px;
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.index-icons2 {
+    position: relative;
+    height: 20px;
+    width: 20px;
+    bottom: 770px;
+    left: 645px;
+    opacity: 45%;
+    cursor: pointer;
+}
+
+.index-icons3 {
+    position: relative;
+    height: 20px;
+    width: 20px;
+    bottom: 762px;
+    left: 1256px;
+    opacity: 55%;
+    cursor: pointer;
+}
+
+.index-icons4 {
+    position: relative;
+    height: 20px;
+    width: 20px;
+    bottom: 732px;
+    left: 1232px;
+    opacity: 45%;
+    cursor: pointer;
+}
+
+.index-icons5 {
+    position: relative;
+    height: 20px;
+    width: 20px;
+    bottom: 702px;
+    left: 1208px;
+    opacity: 50%;
+    cursor: pointer;
+}
